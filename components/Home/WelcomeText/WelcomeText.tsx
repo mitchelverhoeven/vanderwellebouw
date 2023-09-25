@@ -6,7 +6,7 @@ export default function WelcomeText() {
   return (
     <div className="text-center">
       <h2 className="title-welcome-text text-2xl bold pb-10 uppercase underline underline-offset-4">
-        Under construction! Will be ready soon.
+        Under construction!
       </h2>
       <div className="flex justify-center pb-10 min-[951px]:hidden">
       <SVGLaptopAnimation/>
