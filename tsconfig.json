@@ -17,6 +17,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/contact/index.tsx", "components/Contact/ContactForm/ContactForm.js"],
   "exclude": ["node_modules"]
 }
