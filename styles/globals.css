@@ -121,49 +121,49 @@ ul.hamburger-menu.active li:nth-of-type(4) {
   font-family: "Poppins Medium";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-Medium.ttf");
+  src: url("./fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
   font-family: "Poppins Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-Regular.ttf");
+  src: url("./fonts/Poppins-Regular.ttf");
 }
 
 @font-face {
   font-family: "Poppins SemiBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-SemiBold.ttf");
+  src: url("./fonts/Poppins-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-Bold.ttf");
+  src: url("./fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: "Poppins ExtraBold";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-ExtraBold.ttf");
+  src: url("./fonts/Poppins-ExtraBold.ttf");
 }
 
 @font-face {
   font-family: "Poppins Light";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-Light.ttf");
+  src: url("./fonts/Poppins-Light.ttf");
 }
 
 @font-face {
   font-family: "Poppins Thin";
   font-style: normal;
   font-weight: normal;
-  src: url("./Fonts/Poppins-Thin.ttf");
+  src: url("./fonts/Poppins-Thin.ttf");
 }
 
 body {
