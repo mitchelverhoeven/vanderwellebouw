@@ -14,14 +14,14 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <AnimatePresence mode="wait">
-          <motion.div key={router.route} className="h-full">
+      {/* <AnimatePresence mode="wait"> */}
+          {/* <motion.div key={router.route} className="h-full"> */}
         <Layout>
-          <Transition />
+          {/* <Transition /> */}
           <Component key={pageKey} {...pageProps} />
         </Layout>
-          </motion.div>
-      </AnimatePresence>
+          {/* </motion.div> */}
+      {/* </AnimatePresence> */}
 
       <ToastContainer
         position="bottom-center"
