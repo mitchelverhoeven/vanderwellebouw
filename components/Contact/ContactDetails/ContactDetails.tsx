@@ -14,11 +14,11 @@ export default function ContactDetails() {
         <li>3257 LB Ooltgensplaat</li>
         <li>06 - 29 604 142</li>
         <li className="pb-6">info@vanderwellebouw.nl</li>
-        <li>BTW NL --(binnenkort beschikbaar)</li>
+        <li>BTW NL 865607850B01</li>
         <li className="pb-6">Handelsregister 91292808</li>
         <li>
           <div className="hover:text-white duration-300">
-            <Link href="/">Privacy verklaring</Link>
+            <Link href="/privacy">Privacy verklaring</Link>
           </div>
         </li>
         <li>

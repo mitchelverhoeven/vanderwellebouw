@@ -1,8 +1,22 @@
 import Copyright from "@/components/Copyright/Copyright";
+import Head from "next/head";
 import Link from "next/link";
+import { Zoom } from "react-awesome-reveal";
 
 export default function NotFoundPage() {
   return (
+    <>
+    <Head>
+        <title>
+          Oeps, helaas kon de pagina niet gevonden worden! 
+        </title>
+        <meta
+          name="description"
+          content="Oeps, helaas kon de pagina niet gevonden worden! || 404 error page"
+        />
+      </Head>
+
+       <Zoom damping={1} duration={2000}>
     <div
       className="w-[1270px] mx-auto block max-[1450px]:w-[1100px] max-[1250px]:w-[1000px] 
     max-[1100px]:w-[850px] max-[950px]:w-full"
@@ -22,7 +36,7 @@ export default function NotFoundPage() {
           <p>
             Helaas kon de pagina niet gevonden worden. Dit is een tijdelijke
             website daarom is de kans heel groot dat de betreffende pagina niet
-            gevonden kan worden. Het komende jaar zijn wij dan ook hard bezig om
+            bestaat. Het komende jaar zijn wij dan ook hard bezig om
             de website met een fris nieuw design in elkaar te timmeren.
           </p>
 
@@ -42,5 +56,7 @@ export default function NotFoundPage() {
         <Copyright />
       </div>
     </div>
+    </Zoom>
+    </>
   );
 }

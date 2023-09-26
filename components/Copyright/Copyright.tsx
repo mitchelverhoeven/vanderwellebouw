@@ -20,7 +20,7 @@ export default function Copyright() {
       </li>
       <span className="text-white max-[950px]:hidden">|</span>
       <li>
-      <Link href="">
+      <Link href="/privacy">
       <div className="hover:text-white duration-300">Privacy verklaring</div>
       </Link>
       </li>

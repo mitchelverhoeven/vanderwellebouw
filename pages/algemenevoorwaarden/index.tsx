@@ -1,4 +1,5 @@
 import Copyright from "@/components/Copyright/Copyright";
+import Head from "next/head";
 // import PageTransition from "@/components/PageTransition/PageTransition";
 import React from "react";
 // import { forwardRef } from "react";
@@ -10,9 +11,18 @@ import React from "react";
 //   props: TermsAndConditionsPageProps,
 //   ref: TermsAndConditionsPageRef
 // ) {
-  export default function TermsAndConditions() {
+export default function TermsAndConditions() {
   return (
     // <PageTransition ref={ref}>
+    <>
+      <Head>
+        <title>Algemene voorwaarden</title>
+        <meta
+          name="description"
+          content="Op al onze diensten zijn algemene voorwaarden van toepassing!"
+        />
+      </Head>
+      
       <div
         className="w-[1270px] mx-auto block mb-10 max-[1450px]:w-[1100px] 
     max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10 "
@@ -764,6 +774,7 @@ import React from "react";
           <Copyright />
         </div>
       </div>
+    </>
     // </PageTransition>
   );
 }

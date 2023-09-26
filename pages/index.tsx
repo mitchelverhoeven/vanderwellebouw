@@ -5,6 +5,7 @@ import Head from "next/head";
 import Copyright from "@/components/Copyright/Copyright";
 import SVGLaptopAnimation from "@/components/Home/SVGLaptopAnimation/SVGLaptopAnimation";
 import WelcomeText from "@/components/Home/WelcomeText/WelcomeText";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 // type HomePageProps = {};
 // type HomePageRef = React.ForwardedRef<HTMLDivElement>;
@@ -25,6 +26,7 @@ export default function HomePage() {
       </Head>
 
       <div className="bg-yellow-400">
+      <Zoom damping={1} duration={2000}>
         <div className="HomePage">
           <div
             className="w-[1270px] h-auto mt-[100px] grid grid-cols-2 mx-auto items-center
@@ -42,6 +44,7 @@ export default function HomePage() {
         <div className="mt-[200px] max-[1100px]:mt-[100px]">
           <Copyright />
         </div>
+        </Zoom>
       </div>
       {/* // </PageTransition> */}
     </>
