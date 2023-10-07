@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
     <Head>
         <title>
-          Oeps, helaas kon de pagina niet gevonden worden! 
+          Oeps, helaas kon de pagina niet gevonden worden ! 
         </title>
         <meta
           name="description"
