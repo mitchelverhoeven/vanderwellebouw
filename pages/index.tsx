@@ -1,19 +1,12 @@
-// import PageTransition from "@/components/PageTransition/PageTransition";
-// import { forwardRef } from "react";
 import Head from "next/head";
 
 import Copyright from "@/components/Copyright/Copyright";
 import SVGLaptopAnimation from "@/components/Home/SVGLaptopAnimation/SVGLaptopAnimation";
 import WelcomeText from "@/components/Home/WelcomeText/WelcomeText";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
-// type HomePageProps = {};
-// type HomePageRef = React.ForwardedRef<HTMLDivElement>;
-
-// function HomePage(props: HomePageProps, ref: HomePageRef) {
 export default function HomePage() {
   return (
-    // <PageTransition ref={ref}>
     <>
       <Head>
         <title>
@@ -21,7 +14,7 @@ export default function HomePage() {
         </title>
         <meta
           name="description"
-          content="Dé bouwspecialist gericht op kwaliteit - Nieuwbouw, verbouw, aanbouw en renovatie."
+          content="Van der Welle Bouw is een aannemersbedrijf in Ooltgensplaat (Zuid-Holland) en u kunt er terecht voor nieuwbouw, aanbouw, verbouw en renovatie."
         />
       </Head>
 
@@ -46,9 +39,7 @@ export default function HomePage() {
         </div>
         </Zoom>
       </div>
-      {/* // </PageTransition> */}
     </>
   );
 }
 
-// export default forwardRef(HomePage);
