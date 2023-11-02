@@ -11,11 +11,11 @@ export default function ErvarenTimmermanPage() {
         <meta name="description" content="Ben jij de timmerman die wij zoeken?" />
       </Head>
 
-      <Zoom damping={1} duration={2000}>
       <div
         className="w-[1270px] mx-auto block mb-10 max-[1450px]:w-[1100px] 
-      max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10 "
+        max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10 "
       >
+        <Zoom damping={1} duration={2000}>
         <h1 className="text-4xl bold pb-14 mt-10 uppercase text-center">
           Vacature ervaren timmerman
         </h1>
@@ -66,8 +66,8 @@ export default function ErvarenTimmermanPage() {
           Koos van der Welle op telefoonnummer 06-29604142 of stuur een mail
           naar info@vanderwellebouw.nl.
         </p>
-      </div>
       </Zoom>
+      </div>
       <div className="mt-[120px] max-[1100px]:mt-[100px]">
         <Copyright />
       </div>
