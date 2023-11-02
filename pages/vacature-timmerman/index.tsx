@@ -67,10 +67,10 @@ export default function ErvarenTimmermanPage() {
           naar info@vanderwellebouw.nl.
         </p>
       </div>
+      </Zoom>
       <div className="mt-[120px] max-[1100px]:mt-[100px]">
         <Copyright />
       </div>
-      </Zoom>
     </>
   );
 }
