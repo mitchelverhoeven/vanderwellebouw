@@ -1,19 +1,11 @@
 import Copyright from "@/components/Copyright/Copyright";
 import Head from "next/head";
-// import PageTransition from "@/components/PageTransition/PageTransition";
 import React from "react";
-// import { forwardRef } from "react";
+import { Zoom } from "react-awesome-reveal";
 
-// type TermsAndConditionsPageProps = {};
-// type TermsAndConditionsPageRef = React.ForwardedRef<HTMLDivElement>;
 
-// function TermsAndConditions(
-//   props: TermsAndConditionsPageProps,
-//   ref: TermsAndConditionsPageRef
-// ) {
 export default function TermsAndConditions() {
   return (
-    // <PageTransition ref={ref}>
     <>
       <Head>
         <title>Algemene voorwaarden</title>
@@ -23,10 +15,12 @@ export default function TermsAndConditions() {
         />
       </Head>
       
+
       <div
         className="w-[1270px] mx-auto block mb-10 max-[1450px]:w-[1100px] 
     max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10 "
       >
+         <Zoom damping={1} duration={2000}>
         <h1 className="text-2xl bold pb-4 mt-10 uppercase text-center">
           Algemene voorwaarden
         </h1>
@@ -770,13 +764,15 @@ export default function TermsAndConditions() {
           toepassing.
         </p>
 
+        </Zoom>
+
         <div className="mt-[100px] max-[1100px]:mt-[100px]">
           <Copyright />
         </div>
       </div>
     </>
-    // </PageTransition>
+
   );
 }
 
-// export default forwardRef(TermsAndConditions);
+

@@ -35,6 +35,9 @@ export default function MobileMenu() {
               <li className="hover:text-yellow-400 duration-300">
                 <Link href="/">Home</Link>
               </li>
+              <li className="hover:text-white duration-300">
+                <Link href="/vacatures">Vacatures</Link>
+              </li>
               <li className="hover:text-yellow-400 duration-300">
                 <Link href="/contact">Contact</Link>
               </li>

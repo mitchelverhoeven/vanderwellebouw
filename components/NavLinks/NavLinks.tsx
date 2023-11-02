@@ -15,6 +15,10 @@ export default function NavLinks() {
           </li>
 
           <li className="hover:text-white duration-300">
+            <Link href="/vacatures">Vacatures</Link>
+          </li>
+
+          <li className="hover:text-white duration-300">
             <Link href="/contact">Contact</Link>
           </li>
           
