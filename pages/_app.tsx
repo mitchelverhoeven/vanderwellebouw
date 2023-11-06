@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
 import Transition from "@/components/Transition/Transition";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -22,6 +23,8 @@ export default function App({ Component, pageProps }: AppProps) {
         </Layout>
           </motion.div>
       </AnimatePresence>
+
+      <GoogleAnalytics trackPageViews />
 
       <ToastContainer
         position="bottom-center"
