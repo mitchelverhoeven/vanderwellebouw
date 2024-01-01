@@ -9,7 +9,7 @@ export default function WelcomeText() {
         Under construction!
       </h2>
       <div className="flex justify-center pb-10 min-[951px]:hidden">
-      <SVGLaptopAnimation/>
+        <SVGLaptopAnimation />
       </div>
       <p className="max-[1250px]:pl-10 pr-10">
         Onze website is nog in aanbouw, het komende jaar gaan wij dan ook hard
@@ -17,14 +17,19 @@ export default function WelcomeText() {
         fris nieuw design in elkaar te timmeren.
         <br />
         <br />
-        Verder zijn we er helemaal klaar voor om vanaf januari 2024 door te gaan
-        met het aannemersbedrijf van der Welle- van Drongelen, onder de nieuwe
-        naam “Van der Welle Bouw”. <br />
+        Van der Welle Bouw (voorheen aannemersbedrijf van der Welle- van
+        Drongelen) is een kleinschalig bouwbedrijf die zowel nieuwbouw, verbouw,
+        aanbouw als renovatieprojecten verzorgt. Hierbij staat de klant centraal
+        en staat kwaliteit hoog in het vaandel. U kunt dus voor alle
+        bouwwerkzaamheden bij ons terecht en helpen u graag verder met het
+        uitwerken van uw ideeën.
         <br />
-        Onze contactgegevens kunt u al wel vinden op de website, u kunt ons ook
+        <br />
+        Onze contactgegevens kunt u vinden op de website en u kunt ons ook
         volgen op Facebook en Instagram voor de laatste ontwikkelingen. Dus
         heeft u een vraag of wilt u een offerte opvragen, schroom dan niet om te
-        bellen of mailen. <br />
+        bellen of mailen.
+        <br />
         <br />
         Wij staan voor u klaar!
       </p>
