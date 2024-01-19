@@ -25,10 +25,6 @@ export default function ErvarenTimmermanPage() {
           vaandel heeft staan. Bij ons komen alle bouwwerkzaamheden voor, denk
           hierbij aan nieuwbouw, verbouw, aanbouw tot aan renovatie.{" "}
         </p>
-        <p className="pb-4">
-          Vanaf 1 januari 2024 gaat het aannemersbedrijf van der Welle- van
-          Drongelen verder onder de nieuwe naam Van der Welle Bouw.
-        </p>
         <h2 className="bold">Functie:</h2>
         <p className="pb-4">
           Ter uitbreiding van ons kwalitatieve team zijn wij op zoek naar een:
