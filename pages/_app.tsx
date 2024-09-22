@@ -101,7 +101,7 @@ export default function App({ Component, pageProps }: AppProps) {
         flipButtons
       >
         <div className="p-10 max-[700px]:p-0">
-          <span className="font-bold">
+          <span className="bold">
             Deze website gebruikt cookies om je ervaring te verbeteren.
           </span>
           <br />

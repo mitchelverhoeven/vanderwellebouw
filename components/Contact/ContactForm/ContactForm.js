@@ -97,9 +97,11 @@ export default function ContactForm() {
       max-[1100px]:w-[850px] max-[950px]:w-full"
     >
       <form onSubmit={handleSubmit} className="flex flex-col px-8 py-8">
-        <h1 className="text-4xl bold pb-4 text-center max-[750px]:text-3xl
-        max-[500px]:text-2xl max-[355px]:text-xl">
-          Verstuur hier uw bericht
+        <h1
+          className="text-4xl bold pb-4 text-center max-[750px]:text-3xl
+        max-[500px]:text-2xl max-[355px]:text-xl"
+        >
+          Verstuur hier je bericht
         </h1>
 
         <label htmlFor="naam" className="font-bold">
@@ -112,7 +114,7 @@ export default function ContactForm() {
             setFullname(e.target.value);
           }}
           name="fullname"
-          placeholder="Vul hier uw voor- en achternaam in"
+          placeholder="Vul hier je voor- en achternaam in"
           id="naam"
           required
           className="bg-white border-b py-2 pl-4 focus:outline-none rounded-md focus:ring-2 
@@ -126,7 +128,7 @@ export default function ContactForm() {
           type="email"
           name="email"
           id="email"
-          placeholder="Vul hier uw e-mailadres in"
+          placeholder="Vul hier je e-mailadres in"
           value={email}
           required
           onChange={(e) => {
@@ -143,7 +145,7 @@ export default function ContactForm() {
           type="tel"
           name="tel"
           id="tel"
-          placeholder="Vul hier uw telefoonnummer in"
+          placeholder="Vul hier je telefoonnummer in"
           value={tel}
           onChange={(e) => {
             setTel(e.target.value);
@@ -176,7 +178,7 @@ export default function ContactForm() {
           name="message"
           id="message"
           required
-          placeholder="Type hier uw bericht...."
+          placeholder="Type hier je bericht...."
           value={message}
           onChange={(e) => {
             setMessage(e.target.value);

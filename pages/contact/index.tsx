@@ -11,31 +11,34 @@ import { Zoom } from "react-awesome-reveal";
 // type ContactPageRef = React.ForwardedRef<HTMLDivElement>;
 
 // function ContactPage(props: ContactPageProps, ref: ContactPageRef) {
-  export default function ContacPage() {
+export default function ContacPage() {
   return (
     // <PageTransition ref={ref}>
-<>
+    <>
       <Head>
-        <title>Contact - Wij staan klaar voor al uw vragen en bouwplannen! </title>
-        <meta name="description" content="Wij staan klaar voor al uw vragen en bouwplannen!"/>
+        <title>
+          Contact - Wij staan klaar voor al je vragen en bouwplannen!{" "}
+        </title>
+        <meta
+          name="description"
+          content="Wij staan klaar voor al je vragen en bouwplannen!"
+        />
       </Head>
 
       <div className="bg-yellow-400">
-      <Zoom damping={1} duration={2000}>
-        <div className="ContactPage">
+        <Zoom damping={1} duration={2000}>
+          <div className="ContactPage">
+            <ContactDetails />
+            <ContactForm />
 
-          <ContactDetails />
-          <ContactForm />
-
-          <div className="mt-[100px] max-[1100px]:mt-[100px]">
-          <Copyright />
+            <div className="mt-[100px] max-[1100px]:mt-[100px]">
+              <Copyright />
+            </div>
           </div>
- 
-        </div>
         </Zoom>
       </div>
 
-    {/* // </PageTransition> */}
+      {/* // </PageTransition> */}
     </>
   );
 }
