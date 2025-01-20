@@ -37,7 +37,7 @@ export default function NotFoundPage() {
                 Helaas kon de pagina niet gevonden worden. Dit is een tijdelijke
                 website daarom is de kans heel groot dat de betreffende pagina
                 niet bestaat. Het komende jaar zijn wij dan ook hard bezig om de
-                website met een fris nieuw design in elkaar te timmeren.
+                website met een fris nieuw design in elkaar te timmeren....
               </p>
 
               <Link href="/">
