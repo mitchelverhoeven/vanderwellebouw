@@ -28,7 +28,7 @@ export default function NotFoundPage() {
                 className="text-4xl bold uppercase pb-8 text-white underline 
             underline-offset-4"
               >
-                404 error
+                404 errorr
               </h1>
               <h2 className="text-2xl bold uppercase pb-2 max-[500px]:text-xl">
                 Oeps, er is iets verkeerd gegaan!
