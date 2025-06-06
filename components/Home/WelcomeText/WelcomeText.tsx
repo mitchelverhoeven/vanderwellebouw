@@ -5,33 +5,33 @@ import SVGLaptopAnimation from "../SVGLaptopAnimation/SVGLaptopAnimation";
 export default function WelcomeText() {
   return (
     <div className="text-center">
-      <h2 className="title-welcome-text text-2xl bold pb-10 uppercase underline underline-offset-4">
-        Under construction!
+      <h2 className="text-3xl bold px-10 pb-10">
+        <span className="text-lg">Website in ontwikkeling</span>
+        <br />
+        Net als jouw bouwplannen
       </h2>
       <div className="flex justify-center pb-10 min-[951px]:hidden">
         <SVGLaptopAnimation />
       </div>
-      <p className="max-[1250px]:pl-10 pr-10">
-        Onze website is nog in aanbouw, en het komende jaar gaan we hard aan de
-        slag. De gereedschappen liggen al klaar om de website met een fris,
-        nieuw design in elkaar te timmeren.
+      <p className="pl-10 pr-10">
+        Tot die tijd blijven wij vooral doen waar we goed in zijn: bouwen met
+        vakmanschap en oog voor detail.
         <br />
         <br />
-        Van der Welle Bouw (voorheen aannemersbedrijf Van der Welle - Van
-        Drongelen) is een kleinschalig bouwbedrijf dat zich bezighoudt met
-        nieuwbouw, verbouw, aanbouw en renovatieprojecten. Jij staat als klant
-        centraal, en kwaliteit staat bij ons voorop. Je kunt bij ons terecht
-        voor alle bouwwerkzaamheden, en we helpen je graag verder met het
-        uitwerken van je ideeën.
+        Van der Welle Bouw is een kleinschalig bouwbedrijf met een team dat veel
+        ervaring heeft in nieuwbouw, verbouw, aanbouw en renovatie. Of je nu
+        droomt van een nieuw huis, een uitbreiding wilt realiseren of een
+        karakteristiek pand wilt renoveren: wij denken met je mee en zorgen dat
+        alles soepel verloopt.
         <br />
         <br />
-        Onze contactgegevens vind je op de website, en je kunt ons ook volgen op
-        Facebook en Instagram voor de laatste ontwikkelingen. Heb je een vraag
-        of wil je een offerte opvragen? Schroom dan niet om te bellen of te
-        mailen.
+        Duidelijke communicatie en heldere afspraken zijn voor ons
+        vanzelfsprekend. Wij leveren kwaliteit waar je op kunt vertrouwen en
+        waar je trots op mag zijn.
         <br />
         <br />
-        We staan voor je klaar!
+        Heb je een bouwvraag of wil je je ideeën bespreken? We helpen je graag
+        verder met persoonlijk advies en slimme oplossingen.
       </p>
       <Link href="/contact">
         <button

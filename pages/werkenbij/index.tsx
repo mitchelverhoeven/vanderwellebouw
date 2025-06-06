@@ -1,12 +1,13 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Copyright from "@/components/Copyright/Copyright";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
 // import { faChevronRight } from "@fortawesome/free-solid-svg-icons/faChevronRight";
 
-export default function VacaturePage() {
+export default function WerkenBijPage() {
   return (
     <>
       <Head>
@@ -14,7 +15,12 @@ export default function VacaturePage() {
         <meta name="description" content="Kom jij ons team versterken?" />
       </Head>
 
-      <Zoom damping={1} duration={2000}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 4 }}
+      >
         <div
           className="w-[1270px] mx-auto block mb-10 max-[1450px]:w-[1100px] 
     max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10"
@@ -26,8 +32,10 @@ export default function VacaturePage() {
             className="border-2 border-black p-14 items-center flex justify-between max-[700px]:px-6
           max-[535px]:flex-col max-[535px]:justify-center max-[535px]:py-6"
           >
-            <p className="font-bold uppercase text-xl max-[340px]:text-lg">Ervaren timmerman</p>
-            <Link href="/vacature-timmerman">
+            <p className="font-bold uppercase text-xl max-[340px]:text-lg">
+              Ervaren timmerman
+            </p>
+            <Link href="/vacature-ervaren-timmerman">
               <button className="font-bold flex items-center max-[535px]:mt-6">
                 Bekijk vacature{" "}
                 <svg
@@ -61,7 +69,7 @@ export default function VacaturePage() {
         <div className="mt-[250px] max-[1100px]:mt-[100px] max-[360px]:text-xs">
           <Copyright />
         </div>
-      </Zoom>
+      </motion.div>
     </>
   );
 }

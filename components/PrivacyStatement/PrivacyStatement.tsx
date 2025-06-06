@@ -1,10 +1,16 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
 
 export default function PrivacyStatement() {
   return (
     <>
-      <Zoom damping={1} duration={2000}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 4 }}
+      >
         <h2 className="mb-6 text-2xl bold max-[600px]:mt-12 text-center mt-16 uppercase">
           Privacyverklaring
         </h2>
@@ -196,7 +202,7 @@ export default function PrivacyStatement() {
         <p>E-mailadres: info@vanderwellebouw.nl</p>
         <p>Telefoon: 06-29604142</p>
         <p className="mt-4">KvK nummer: 91292808</p>
-      </Zoom>
+      </motion.div>
     </>
   );
 }

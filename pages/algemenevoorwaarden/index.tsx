@@ -1,4 +1,5 @@
 import Copyright from "@/components/Copyright/Copyright";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import React from "react";
 import { Zoom } from "react-awesome-reveal";
@@ -18,7 +19,12 @@ export default function TermsAndConditions() {
         className="w-[1270px] mx-auto block mb-10 max-[1450px]:w-[1100px] 
     max-[1250px]:w-[1000px] max-[1100px]:w-[850px] max-[950px]:w-full max-[950px]:px-10 "
       >
-        <Zoom damping={1} duration={2000}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 4 }}
+        >
           <h1 className="text-2xl bold pb-4 mt-10 uppercase text-center">
             Algemene voorwaarden
           </h1>
@@ -775,7 +781,7 @@ export default function TermsAndConditions() {
             17.3 Op alle overeenkomsten met Opdrachtnemer is Nederlands recht
             van toepassing.
           </p>
-        </Zoom>
+        </motion.div>
 
         <div className="mt-[100px] max-[1100px]:mt-[100px]">
           <Copyright />

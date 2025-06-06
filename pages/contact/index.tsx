@@ -6,6 +6,7 @@ import ContactForm from "@/components/Contact/ContactForm/ContactForm";
 import ContactDetails from "@/components/Contact/ContactDetails/ContactDetails";
 import Copyright from "@/components/Copyright/Copyright";
 import { Zoom } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 
 // type ContactPageProps = {};
 // type ContactPageRef = React.ForwardedRef<HTMLDivElement>;
@@ -26,7 +27,12 @@ export default function ContacPage() {
       </Head>
 
       <div className="bg-yellow-400">
-        <Zoom damping={1} duration={2000}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 4 }}
+        >
           <div className="ContactPage">
             <ContactDetails />
             <ContactForm />
@@ -35,7 +41,7 @@ export default function ContacPage() {
               <Copyright />
             </div>
           </div>
-        </Zoom>
+        </motion.div>
       </div>
 
       {/* // </PageTransition> */}

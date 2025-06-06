@@ -7,7 +7,6 @@ export default function NavLinks() {
     <div>
       <nav className="">
         <ul className="flex text-xl gap-4 tracking-wide">
-            
           <SocialMediaLinks />
 
           <li className="hover:text-white duration-300">
@@ -15,13 +14,12 @@ export default function NavLinks() {
           </li>
 
           <li className="hover:text-white duration-300">
-            <Link href="/vacatures">Vacatures</Link>
+            <Link href="/werkenbij">Werken bij</Link>
           </li>
 
           <li className="hover:text-white duration-300">
             <Link href="/contact">Contact</Link>
           </li>
-          
         </ul>
       </nav>
     </div>

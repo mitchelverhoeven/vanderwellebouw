@@ -1,4 +1,5 @@
 import Copyright from "@/components/Copyright/Copyright";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Link from "next/link";
 import { Zoom } from "react-awesome-reveal";
@@ -14,7 +15,12 @@ export default function NotFoundPage() {
         />
       </Head>
 
-      <Zoom damping={1} duration={2000}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 4 }}
+      >
         <div
           className="w-[1270px] mx-auto block max-[1450px]:w-[1100px] max-[1250px]:w-[1000px] 
     max-[1100px]:w-[850px] max-[950px]:w-full"
@@ -56,7 +62,7 @@ export default function NotFoundPage() {
             <Copyright />
           </div>
         </div>
-      </Zoom>
+      </motion.div>
     </>
   );
 }
