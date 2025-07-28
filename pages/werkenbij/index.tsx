@@ -53,7 +53,7 @@ export default function WerkenBijPage() {
             <p>
               Op dit moment geen (passende) vacature? Wij komen graag in contact
               met echte vakmensen en nodigen je dan ook graag uit voor een open
-              sollicitatie.
+              sollicitatie..
             </p>
             <Link href="/contact">
               <button
