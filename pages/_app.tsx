@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
           <Layout>
-            <Transition />
+            {/* <Transition /> */}
             <Component key={pageKey} {...pageProps} />
           </Layout>
         </motion.div>
