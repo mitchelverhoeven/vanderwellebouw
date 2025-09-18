@@ -1,17 +1,10 @@
 import Head from "next/head";
-// import PageTransition from "@/components/PageTransition/PageTransition";
-// import { forwardRef } from "react";
 
 import ContactForm from "@/components/Contact/ContactForm/ContactForm";
 import ContactDetails from "@/components/Contact/ContactDetails/ContactDetails";
 import Copyright from "@/components/Copyright/Copyright";
-import { Zoom } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 
-// type ContactPageProps = {};
-// type ContactPageRef = React.ForwardedRef<HTMLDivElement>;
-
-// function ContactPage(props: ContactPageProps, ref: ContactPageRef) {
 export default function ContacPage() {
   return (
     // <PageTransition ref={ref}>
