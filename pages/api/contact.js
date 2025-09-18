@@ -52,7 +52,7 @@ import nodemailer from "nodemailer";
 
 // eenvoudige in-memory rate limiter (reset na interval). Niet persistent — ok voor kleine sites.
 const RATE_LIMIT_WINDOW_MS = 60 * 1000; // 1 minuut
-const RATE_LIMIT_MAX = 6; // max 6 requests per IP per window
+const RATE_LIMIT_MAX = 6; // max 6 requests per IP per window...
 const ipMap = new Map();
 
 function clean(input = "") {
@@ -132,6 +132,7 @@ export default async function handler(req, res) {
           <p><strong>Naam:</strong> ${sFullname}</p>
           <p><strong>Email:</strong> ${sEmail}</p>
           <p><strong>Telefoon:</strong> ${sTel}</p>
+          <p><strong>Onderwerp:</strong> ${sSubject}</p>
           <p><strong>Bericht:</strong><br/>${sMessage}</p>
         </div>
       `,
