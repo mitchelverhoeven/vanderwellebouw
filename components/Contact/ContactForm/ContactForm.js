@@ -215,7 +215,7 @@ export default function ContactForm() {
   const [tel, setTel] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  // const [honeypot, setHoneypot] = useState(""); // hidden field for bots
+  const [address, setAddress] = useState(""); // honeypot
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -247,12 +247,6 @@ export default function ContactForm() {
     e.preventDefault();
     if (!validate()) return;
 
-    // Honeypot: if filled, treat as spam
-    // if (honeypot) {
-    //   toast.error("Verzenden mislukt");
-    //   return;
-    // }
-
     setLoading(true);
     try {
       const res = await fetch("/api/contact", {
@@ -264,7 +258,7 @@ export default function ContactForm() {
           tel,
           subject,
           message,
-          // honeypot,
+          address, // honeypot
         }),
       });
 
@@ -278,6 +272,7 @@ export default function ContactForm() {
         setTel("");
         setSubject("");
         setMessage("");
+        setAddress(""); // reset honeypot
       }
     } catch (err) {
       console.error(err);
@@ -384,6 +379,29 @@ export default function ContactForm() {
             tabIndex="-1"
           />
         </div> */}
+
+        {/* Honeypot field - hidden */}
+        <div
+          style={{
+            position: "absolute",
+            left: "-9999px",
+            top: "auto",
+            width: "1px",
+            height: "1px",
+            overflow: "hidden",
+          }}
+          aria-hidden="true"
+        >
+          <label>Laat dit leeg</label>
+          <input
+            type="text"
+            name="address"
+            value={address}
+            onChange={(e) => setAddress(e.target.value)}
+            autoComplete="off"
+            tabIndex="-1"
+          />
+        </div>
 
         <div className="text-xs pt-4">
           <p>Met * gemarkeerde velden zijn geen verplichte velden.</p>
