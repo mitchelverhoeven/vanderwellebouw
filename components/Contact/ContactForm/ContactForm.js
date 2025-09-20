@@ -264,7 +264,7 @@ export default function ContactForm() {
           tel,
           subject,
           message,
-          honeypot,
+          // honeypot,
         }),
       });
 
