@@ -87,13 +87,13 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { fullname, email, tel, subject, message, honeypot } = req.body || {};
+    const { fullname, email, tel, subject, message } = req.body || {};
 
     // honeypot check
-    if (honeypot) {
-      // silently accept but don't send — helps defeat bots
-      return res.status(200).json({ success: true });
-    }
+    // if (honeypot) {
+    //   // silently accept but don't send — helps defeat bots
+    //   return res.status(200).json({ success: true });
+    // }
 
     // basic validation
     if (!fullname || !email || !subject || !message) {
