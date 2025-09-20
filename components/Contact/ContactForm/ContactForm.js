@@ -215,7 +215,7 @@ export default function ContactForm() {
   const [tel, setTel] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [honeypot, setHoneypot] = useState(""); // hidden field for bots
+  // const [honeypot, setHoneypot] = useState(""); // hidden field for bots
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
@@ -248,10 +248,10 @@ export default function ContactForm() {
     if (!validate()) return;
 
     // Honeypot: if filled, treat as spam
-    if (honeypot) {
-      toast.error("Verzenden mislukt");
-      return;
-    }
+    // if (honeypot) {
+    //   toast.error("Verzenden mislukt");
+    //   return;
+    // }
 
     setLoading(true);
     try {
@@ -363,7 +363,7 @@ export default function ContactForm() {
         />
 
         {/* Honeypot field - visually hidden */}
-        <div
+        {/* <div
           style={{
             position: "absolute",
             left: "-9999px",
@@ -383,7 +383,7 @@ export default function ContactForm() {
             autoComplete="off"
             tabIndex="-1"
           />
-        </div>
+        </div> */}
 
         <div className="text-xs pt-4">
           <p>Met * gemarkeerde velden zijn geen verplichte velden.</p>
